@@ -5,6 +5,7 @@ import { IndexPageTemplate } from '../../templates/index-page'
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
+	// Suspense
   if (data) {
     return (
       <IndexPageTemplate
