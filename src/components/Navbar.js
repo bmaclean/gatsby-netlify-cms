@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import logo from '../img/bemo-logo.png';
 
-const Navbar = props => {
+const Navbar = () => {
 	return (
 		<nav role="navigation" aria-label="main-navigation">
 			<div>
