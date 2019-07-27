@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 
 export const IndexPageTemplate = ({
   image,
@@ -85,7 +84,6 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
               </div>
             </div>
           </div>
@@ -140,7 +138,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image
+        image {
+			childImageSharp {
+			  fluid(maxWidth: 2048, quality: 100) {
+				...GatsbyImageSharpFluid
+			  }
+			}
+		  }
         heading
         subheading
         mainpitch {
