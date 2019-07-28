@@ -24,6 +24,8 @@ const Layout = ({children}) => {
 				<meta property="og:type" content="business.business" />
 				<meta property="og:title" content={title} />
 				<meta property="og:url" content="/" />
+
+				<meta name="robots" content="noindex" />
 			</Helmet>
 			<Navbar />
 			<div css={{marginTop: '100px'}}>{children}</div>
