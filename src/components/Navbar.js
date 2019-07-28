@@ -24,6 +24,10 @@ const linkStyles = {
 	}
 };
 
+const fakeLinkStyles = {
+	cursor: 'pointer'
+};
+
 const activeLinkStyles = {
 	borderBottom: '1px solid black'
 };
@@ -79,22 +83,12 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div css={{...navItemStyles}}>
-					<Link
-						to="/howtoprepare"
-						css={{...linkStyles}}
-						activeStyle={{...activeLinkStyles}}
-					>
-						How To Prepare
-					</Link>
+					<span css={{...linkStyles, ...fakeLinkStyles}}>How To Prepare</span>
 				</div>
 				<div css={{...navItemStyles}}>
-					<Link
-						to="/cdainterviewquestions"
-						css={{...linkStyles}}
-						activeStyle={{...activeLinkStyles}}
-					>
+					<span css={{...linkStyles, ...fakeLinkStyles}}>
 						CDA Interview Questions
-					</Link>
+					</span>
 				</div>
 				<div css={{...navItemStyles}}>
 					<Link
