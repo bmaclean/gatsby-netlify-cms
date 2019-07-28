@@ -7,7 +7,12 @@ import useSiteMetadata from './SiteMetadata';
 const Layout = ({children}) => {
 	const {title, description} = useSiteMetadata();
 	return (
-		<div>
+		<div
+			css={{
+				width: '100vw',
+				fontFamily: 'arial'
+			}}
+		>
 			<Helmet>
 				<html lang="en" />
 				<title>{title}</title>
@@ -20,7 +25,7 @@ const Layout = ({children}) => {
 				<meta property="og:url" content="/" />
 			</Helmet>
 			<Navbar />
-			<div>{children}</div>
+			<div css={{marginTop: '100px'}}>{children}</div>
 			<Footer />
 		</div>
 	);
