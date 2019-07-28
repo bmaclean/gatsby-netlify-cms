@@ -13,19 +13,19 @@ const linkStyles = {
 	fontFamily: 'arial',
 	textDecoration: 'none',
 	color: 'black',
-	fontSize: '17px'
+	fontSize: '17px',
+	'&:hover': {
+		borderBottom: '1px solid black'
+	},
+	'&:after': {
+		borderBottom: '1px solid black',
+		width: '40%'
+	}
 };
 
 const activeLinkStyles = {
-	'&:after': {
-		content: "",
-		display: 'block',
-		opacity: 1,
-		borderBottom: '1px solid',
-		margin: '0px auto',
-		width: '40%'
-	}
-}
+	borderBottom: '1px solid black'
+};
 
 const Navbar = () => {
 	return (
@@ -69,22 +69,38 @@ const Navbar = () => {
 				}}
 			>
 				<div css={{...navItemStyles}}>
-					<Link to="/" css={{...linkStyles, ...activeLinkStyles}} activeStyle={{}}>
+					<Link
+						to="/"
+						css={{...linkStyles}}
+						activeStyle={{...activeLinkStyles}}
+					>
 						Main
 					</Link>
 				</div>
 				<div css={{...navItemStyles}}>
-					<Link to="/" css={{...linkStyles}}>
+					<Link
+						to="/howtoprepare"
+						css={{...linkStyles}}
+						activeStyle={{...activeLinkStyles}}
+					>
 						How To Prepare
 					</Link>
 				</div>
 				<div css={{...navItemStyles}}>
-					<Link to="/" css={{...linkStyles}}>
+					<Link
+						to="/cdainterviewquestions"
+						css={{...linkStyles}}
+						activeStyle={{...activeLinkStyles}}
+					>
 						CDA Interview Questions
 					</Link>
 				</div>
 				<div css={{...navItemStyles}}>
-					<Link to="/contact" css={{...linkStyles}}>
+					<Link
+						to="/contact"
+						css={{...linkStyles}}
+						activeStyle={{...activeLinkStyles}}
+					>
 						Contact Us
 					</Link>
 				</div>
