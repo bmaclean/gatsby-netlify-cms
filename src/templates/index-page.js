@@ -13,65 +13,56 @@ export const IndexPageTemplate = ({
 }) => (
 	<div>
 		<div
-			className="full-width-image margin-top-0"
 			style={{
 				backgroundImage: `url(${
 					image.childImageSharp ? image.childImageSharp.fluid.src : image
 				})`,
 				backgroundPosition: 'top left',
-				backgroundAttachment: 'fixed'
+				backgroundAttachment: 'fixed',
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: 'cover',
+				height: '800px',
+				width: '100%'
 			}}
 		>
 			<div
 				style={{
 					display: 'flex',
-					height: '150px',
+					height: '100%',
 					lineHeight: '1',
-					justifyContent: 'space-around',
-					alignItems: 'left',
+					justifyContent: 'center',
+					alignItems: 'center',
 					flexDirection: 'column'
 				}}
 			>
 				<h1
-					className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-					style={{
-						boxShadow:
-							'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-						backgroundColor: 'rgb(255, 68, 0)',
+					css={{
+						textAlign: 'center',
+						letterSpacing: '10px',
+						fontFamily: 'arial',
+						fontWeight: 'lighter',
+						fontSize: '42px',
 						color: 'white',
-						lineHeight: '1',
-						padding: '0.25em'
+						borderBottom: '1px solid white',
+						width: '40%',
+						paddingBottom: '10px'
 					}}
 				>
 					{title}
 				</h1>
 			</div>
 		</div>
-		<section className="section section--gradient">
-			<div className="container">
-				<div className="section">
-					<div className="columns">
-						<div className="column is-10 is-offset-1">
-							<div className="content">
-								<div className="content">
-									<div className="tile">
-										<h1 className="title">{mainpitch.title}</h1>
-									</div>
-									<div className="tile">
-										<h3 className="subtitle">{mainpitch.description}</h3>
-									</div>
-								</div>
-								<div className="columns">
-									<div className="column is-12">
-										<p>{description}</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div>
+			<h1>{mainpitch.title}</h1>
+			<div>
+				<h3>{mainpitch.description}</h3>
 			</div>
-		</section>
+		</div>
+		<div>
+			<div>
+				<p>{description}</p>
+			</div>
+		</div>
 	</div>
 );
 

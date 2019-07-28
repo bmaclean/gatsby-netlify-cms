@@ -3,6 +3,7 @@ import {Helmet} from 'react-helmet';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import useSiteMetadata from './SiteMetadata';
+import './layout.css';
 
 const Layout = ({children}) => {
 	const {title, description} = useSiteMetadata();

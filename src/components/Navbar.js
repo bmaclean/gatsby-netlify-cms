@@ -14,6 +14,7 @@ const linkStyles = {
 	textDecoration: 'none',
 	color: 'black',
 	fontSize: '17px',
+	letterSpacing: '1px',
 	'&:hover': {
 		borderBottom: '1px solid black'
 	},
