@@ -1,11 +1,10 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: CDA Interview Guide
 image: /img/cda-interview-guide.png
-heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
+  title: 'Ultimate Guide to CDA Structured Interview: Tips & Proven Strategies to Help You Prepare & Ace Your CDA Interview'
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
