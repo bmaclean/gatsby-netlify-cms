@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 export const IndexPageTemplate = ({image, title, heading, intro}) => (
 	<div>
 		<div
-			style={{
+			css={{
 				backgroundImage: `url(${
 					image.childImageSharp ? image.childImageSharp.fluid.src : image
 				})`,
@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({image, title, heading, intro}) => (
 			}}
 		>
 			<div
-				style={{
+				css={{
 					display: 'flex',
 					height: '100%',
 					lineHeight: '1',
@@ -51,9 +51,14 @@ export const IndexPageTemplate = ({image, title, heading, intro}) => (
 		</div>
 		{console.log({intro})}
 		{intro.blurbs.map(blurb => (
-			<div key={blurb.title} css={{marginTop: '2em', paddingLeft: '3.5%', paddingRight: '3.5%'}}>
+			<div
+				key={blurb.title}
+				css={{marginTop: '2em', paddingLeft: '3.5%', paddingRight: '3.5%'}}
+			>
 				<h3>{blurb.title}</h3>
-				<p>{blurb.text}</p>
+				{blurb.text.split(/\n/).map(paragraph => (
+					<p key={paragraph}>{paragraph}</p>
+				))}
 			</div>
 		))}
 	</div>
