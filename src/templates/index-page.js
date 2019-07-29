@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
+import PasswordPage from '../components/PasswordPage';
 
 export const IndexPageTemplate = ({image, title, heading, intro}) => (
 	<div>
@@ -75,8 +76,13 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({data}) => {
 	const {frontmatter} = data && data.markdownRemark;
+	const [show, setShow] = useState(false);
 
-	return (
+	const passwordSuccess = () => {
+		setShow(true);
+	};
+
+	return show ? (
 		<Layout>
 			<IndexPageTemplate
 				image={frontmatter.image}
@@ -86,6 +92,8 @@ const IndexPage = ({data}) => {
 				intro={frontmatter.intro}
 			/>
 		</Layout>
+	) : (
+		<PasswordPage onSuccess={passwordSuccess} />
 	);
 };
 
