@@ -82,14 +82,14 @@ const Navbar = () => {
 						Main
 					</Link>
 				</div>
-				<div css={{...navItemStyles}}>
+				{/* <div css={{...navItemStyles}}>
 					<span css={{...linkStyles, ...fakeLinkStyles}}>How To Prepare</span>
 				</div>
 				<div css={{...navItemStyles}}>
 					<span css={{...linkStyles, ...fakeLinkStyles}}>
 						CDA Interview Questions
 					</span>
-				</div>
+				</div> */}
 				<div css={{...navItemStyles}}>
 					<Link
 						to="/contact"
