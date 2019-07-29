@@ -10,9 +10,11 @@
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
-            "jsx": true
+			"jsx": true,
+			"optionalChaining": true
         },
-        "sourceType": "module"
+        "sourceType": "module",
+		"parser": "babel-eslint"
     },
     "plugins": [
 		"react",
