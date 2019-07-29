@@ -4,13 +4,7 @@ import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
 
-export const IndexPageTemplate = ({
-	image,
-	title,
-	mainpitch,
-	description,
-	intro
-}) => (
+export const IndexPageTemplate = ({image, title, heading, intro}) => (
 	<div>
 		<div
 			style={{
@@ -41,10 +35,10 @@ export const IndexPageTemplate = ({
 						letterSpacing: '10px',
 						fontFamily: 'arial',
 						fontWeight: 'lighter',
-						fontSize: '42px',
+						fontSize: '48px',
 						color: 'white',
 						borderBottom: '1px solid white',
-						width: '40%',
+						width: '50%',
 						paddingBottom: '10px'
 					}}
 				>
@@ -52,25 +46,23 @@ export const IndexPageTemplate = ({
 				</h1>
 			</div>
 		</div>
-		<div>
-			<h1>{mainpitch.title}</h1>
-			<div>
-				<h3>{mainpitch.description}</h3>
-			</div>
+		<div css={{margin: '16px', marginTop: '48px'}}>
+			<h1>{heading}</h1>
 		</div>
-		<div>
-			<div>
-				<p>{description}</p>
+		{console.log({intro})}
+		{intro.blurbs.map(blurb => (
+			<div key={blurb.title} css={{marginTop: '2em', paddingLeft: '3.5%', paddingRight: '3.5%'}}>
+				<h3>{blurb.title}</h3>
+				<p>{blurb.text}</p>
 			</div>
-		</div>
+		))}
 	</div>
 );
 
 IndexPageTemplate.propTypes = {
 	image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 	title: PropTypes.string,
-	mainpitch: PropTypes.object,
-	description: PropTypes.string,
+	heading: PropTypes.string,
 	intro: PropTypes.shape({
 		blurbs: PropTypes.array
 	})
@@ -114,16 +106,12 @@ export const pageQuery = graphql`
 						}
 					}
 				}
-				mainpitch {
-					title
-					description
-				}
-				description
+				heading
 				intro {
 					blurbs {
+						title
 						text
 					}
-					description
 				}
 			}
 		}
