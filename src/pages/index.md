@@ -5,20 +5,28 @@ image: /img/cda-interview-guide.png
 heading: 'Ultimate Guide to CDA Structured Interview: Tips & Proven Strategies to Help You Prepare & Ace Your CDA Interview'
 intro:
   blurbs:
-    - title: OVERVIEW
+    - title: Overview
       text: >
         The purpose of the dental school interview  
+        
         History and rationale of the CDA interview  
+        
         Types of Questions  
+        
         The Seven Competencies  
+        
         Structure of the CDA interview  
+        
         How to prepare for your CDA Interview  
+        
         Sample CDA interview questions  
+        
         BeMo CDA-structured interview prep program  
+        
         Contact us
     - title: What is the purpose of the dental school interview? 
       text: >
-        "Regardless of the format of dental school interview (e.g. CDA structured interview, MMI, or Panel interview), the purpose of the interview is rather straightforward and remains constant across the board: to assess the personality and Non-Cognitive Skills (NCSs) of the candidate.  
+        "Regardless of the format of dental school interview (e.g. CDA structured interview, MMI, or Panel interview), the purpose of the interview is rather straightforward and remains constant across the board: to assess the personality and Non-Cognitive Skills (NCSs) of the candidate.
 
         What are NCSs? By these we mean the following: Communication skills, interpersonal skills, ethical and moral decision making capacity, maturity, professionalism, sense of social responsibility, service to community, leadership, initiative, scholarship, ability to collaborate with others, conflict resolution skills, etc.  
 
@@ -44,18 +52,24 @@ intro:
         Notice how SI questions are typically future-oriented, as opposed to PBDI questions, which are past-oriented. The specific and actual SI and PBDI questions are devised according to seven competencies, that the CDA has found to be reliable and valid indicators of future performance. In other words, every question that is asked during a dental school interview, regardless of being a SI or PBDI question, will address one or more than one of the seven competencies.'
     - title: The Seven Competencies
       text: >
-        '1. Communication: does the applicant have excellent communication skills?
-        1. Conscientiousness: is the applicant thorough, careful to do tasks well?
-        2. Integrity : is the applicant honest with themselves and others?
-        3. Judgment and analysis: does the applicant have the capability to make sound judgments? Do they gather all the facts before making a decision?
-        4. self-control : Does the applicant remain calm and in control in difficult situations?
-        5. sensitivity to others : Does the applicant show empathy towards others? Do they take the feelings of others into consideration?
-        6. Tact and diplomacy : Does the applicant show sensitivity in dealing with difficult issues? Does the applicant possess the necessary skills to deal with others without causing negative feelings?  
+        1. Communication: does the applicant have excellent communication skills?
+        
+        2. Conscientiousness: is the applicant thorough, careful to do tasks well?
+   
+        3. Integrity : is the applicant honest with themselves and others?
+   
+        4. Judgment and analysis: does the applicant have the capability to make sound judgments? Do they gather all the facts before making a decision?
+        
+        5. Self-control : Does the applicant remain calm and in control in difficult situations?
+        
+        6. Sensitivity to others : Does the applicant show empathy towards others? Do they take the feelings of others into consideration?
+        
+        7. Tact and diplomacy : Does the applicant show sensitivity in dealing with difficult issues? Does the applicant possess the necessary skills to deal with others without causing negative feelings?  
 
-        Notice in the above examples that the SI sample question is addressing the competencies of self-control, sensitivity to others, communication, while the PBDI question addresses the competencies of conscientiousness, Integrity, and judgement and analysis. In all of the questions that will be asked of you during your interview, the competency of communication is a constant that is continuously tested and retested. In order to be successful, however, you will have to be able to know which other competencies also apply to the question so that you can formulate an appropriate response, which touches on the key factors essential for the interviewers.'
+        Notice in the above examples that the SI sample question is addressing the competencies of self-control, sensitivity to others, communication, while the PBDI question addresses the competencies of conscientiousness, Integrity, and judgement and analysis. In all of the questions that will be asked of you during your interview, the competency of communication is a constant that is continuously tested and retested. In order to be successful, however, you will have to be able to know which other competencies also apply to the question so that you can formulate an appropriate response, which touches on the key factors essential for the interviewers.
     - title: Structure of the CDA interview
       text: >
-        'The CDA structured interview is comprised of seven questions, one for each of the seven competencies described above. Each question, which can either be a SI or a PBDI type, is scored on a 5-point scale for a total and a maximum of 35 points by two interviewers who are either a pair of dentists, or senior dental students. The interview usually takes about 20-30 minutes to be completed. 
+        The CDA structured interview is comprised of seven questions, one for each of the seven competencies described above. Each question, which can either be a SI or a PBDI type, is scored on a 5-point scale for a total and a maximum of 35 points by two interviewers who are either a pair of dentists, or senior dental students. The interview usually takes about 20-30 minutes to be completed. 
 
         Click here to learn how to prepare for your CDA interview
 
@@ -64,5 +78,5 @@ intro:
         Click here to learn more about our money-back guarantee CDA interview preparation programs.'
     - title: 'Reference:'
       text: >
-        'Poole A., Catano, VM., and Cunningham, DP. Predicting performance in Canadian dental schools: the new CDA structured interview, a new personality assessment, and the DAT. Journal of Dental Education. 2007; 71: 664 - 676.'
+        Poole A., Catano, VM., and Cunningham, DP. Predicting performance in Canadian dental schools: the new CDA structured interview, a new personality assessment, and the DAT. Journal of Dental Education. 2007; 71: 664 - 676.
 ---
